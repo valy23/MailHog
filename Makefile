@@ -1,4 +1,4 @@
-VERSION=1.0.0
+VERSION=ValyRelease
 
 all: fmt combined
 
