@@ -139,6 +139,7 @@ func (maildir *Maildir) List(start, limit int) (*data.Messages, error) {
 		return nil, err
 	}
 
+	log.Println("Sorting maildir...")
 	sort.Slice(n, func(i, j int) bool {
 		return n[i].ModTime().After(n[j].ModTime())
 	})
